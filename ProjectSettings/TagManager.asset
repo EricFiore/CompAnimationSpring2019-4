@@ -18,6 +18,9 @@ TagManager:
   - idleObject
   - roomOneGoal
   - rocks
+  - Marker
+  - NoHighlight
+  - groundRock
   layers:
   - Default
   - TransparentFX
