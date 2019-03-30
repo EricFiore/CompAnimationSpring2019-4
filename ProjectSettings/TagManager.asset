@@ -21,6 +21,7 @@ TagManager:
   - Marker
   - NoHighlight
   - groundRock
+  - gold
   layers:
   - Default
   - TransparentFX
