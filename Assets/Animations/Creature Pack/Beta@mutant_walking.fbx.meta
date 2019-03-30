@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: 1234d8ece14667a46a8b9829700b5012
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Beta:Head
+    100002: Beta:HeadTop_End
+    100004: Beta:Hips
+    100006: Beta:LeftArm
+    100008: Beta:LeftFoot
+    100010: Beta:LeftFootToeBase_End
+    100012: Beta:LeftForeArm
+    100014: Beta:LeftHand
+    100016: Beta:LeftHandIndex1
+    100018: Beta:LeftHandIndex2
+    100020: Beta:LeftHandIndex3
+    100022: Beta:LeftHandIndex4
+    100024: Beta:LeftHandMiddle1
+    100026: Beta:LeftHandMiddle2
+    100028: Beta:LeftHandMiddle3
+    100030: Beta:LeftHandMiddle4
+    100032: Beta:LeftHandPinky1
+    100034: Beta:LeftHandPinky2
+    100036: Beta:LeftHandPinky3
+    100038: Beta:LeftHandPinky4
+    100040: Beta:LeftHandRing1
+    100042: Beta:LeftHandRing2
+    100044: Beta:LeftHandRing3
+    100046: Beta:LeftHandRing4
+    100048: Beta:LeftHandThumb1
+    100050: Beta:LeftHandThumb2
+    100052: Beta:LeftHandThumb3
+    100054: Beta:LeftHandThumb4
+    100056: Beta:LeftLeg
+    100058: Beta:LeftShoulder
+    100060: Beta:LeftToeBase
+    100062: Beta:LeftUpLeg
+    100064: Beta:Neck
+    100066: Beta:Neck1
+    100068: Beta:RightArm
+    100070: Beta:RightFoot
+    100072: Beta:RightFootToeBase_End
+    100074: Beta:RightForeArm
+    100076: Beta:RightHand
+    100078: Beta:RightHandIndex1
+    100080: Beta:RightHandIndex2
+    100082: Beta:RightHandIndex3
+    100084: Beta:RightHandIndex4
+    100086: Beta:RightHandMiddle1
+    100088: Beta:RightHandMiddle2
+    100090: Beta:RightHandMiddle3
+    100092: Beta:RightHandMiddle4
+    100094: Beta:RightHandPinky1
+    100096: Beta:RightHandPinky2
+    100098: Beta:RightHandPinky3
+    100100: Beta:RightHandPinky4
+    100102: Beta:RightHandRing1
+    100104: Beta:RightHandRing2
+    100106: Beta:RightHandRing3
+    100108: Beta:RightHandRing4
+    100110: Beta:RightHandThumb1
+    100112: Beta:RightHandThumb2
+    100114: Beta:RightHandThumb3
+    100116: Beta:RightHandThumb4
+    100118: Beta:RightLeg
+    100120: Beta:RightShoulder
+    100122: Beta:RightToeBase
+    100124: Beta:RightUpLeg
+    100126: Beta:Spine
+    100128: Beta:Spine1
+    100130: Beta:Spine2
+    100132: //RootNode
+    400000: Beta:Head
+    400002: Beta:HeadTop_End
+    400004: Beta:Hips
+    400006: Beta:LeftArm
+    400008: Beta:LeftFoot
+    400010: Beta:LeftFootToeBase_End
+    400012: Beta:LeftForeArm
+    400014: Beta:LeftHand
+    400016: Beta:LeftHandIndex1
+    400018: Beta:LeftHandIndex2
+    400020: Beta:LeftHandIndex3
+    400022: Beta:LeftHandIndex4
+    400024: Beta:LeftHandMiddle1
+    400026: Beta:LeftHandMiddle2
+    400028: Beta:LeftHandMiddle3
+    400030: Beta:LeftHandMiddle4
+    400032: Beta:LeftHandPinky1
+    400034: Beta:LeftHandPinky2
+    400036: Beta:LeftHandPinky3
+    400038: Beta:LeftHandPinky4
+    400040: Beta:LeftHandRing1
+    400042: Beta:LeftHandRing2
+    400044: Beta:LeftHandRing3
+    400046: Beta:LeftHandRing4
+    400048: Beta:LeftHandThumb1
+    400050: Beta:LeftHandThumb2
+    400052: Beta:LeftHandThumb3
+    400054: Beta:LeftHandThumb4
+    400056: Beta:LeftLeg
+    400058: Beta:LeftShoulder
+    400060: Beta:LeftToeBase
+    400062: Beta:LeftUpLeg
+    400064: Beta:Neck
+    400066: Beta:Neck1
+    400068: Beta:RightArm
+    400070: Beta:RightFoot
+    400072: Beta:RightFootToeBase_End
+    400074: Beta:RightForeArm
+    400076: Beta:RightHand
+    400078: Beta:RightHandIndex1
+    400080: Beta:RightHandIndex2
+    400082: Beta:RightHandIndex3
+    400084: Beta:RightHandIndex4
+    400086: Beta:RightHandMiddle1
+    400088: Beta:RightHandMiddle2
+    400090: Beta:RightHandMiddle3
+    400092: Beta:RightHandMiddle4
+    400094: Beta:RightHandPinky1
+    400096: Beta:RightHandPinky2
+    400098: Beta:RightHandPinky3
+    400100: Beta:RightHandPinky4
+    400102: Beta:RightHandRing1
+    400104: Beta:RightHandRing2
+    400106: Beta:RightHandRing3
+    400108: Beta:RightHandRing4
+    400110: Beta:RightHandThumb1
+    400112: Beta:RightHandThumb2
+    400114: Beta:RightHandThumb3
+    400116: Beta:RightHandThumb4
+    400118: Beta:RightLeg
+    400120: Beta:RightShoulder
+    400122: Beta:RightToeBase
+    400124: Beta:RightUpLeg
+    400126: Beta:Spine
+    400128: Beta:Spine1
+    400130: Beta:Spine2
+    400132: //RootNode
+    7400000: mutant_walking
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mutant_walking
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton:
+    - name: Beta@mutant_walking(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Hips
+      parentName: Beta@mutant_walking(Clone)
+      position: {x: -0.031004965, y: 0.95536494, z: -0.014584716}
+      rotation: {x: 0.057246123, y: -0.050254796, z: -0.05687196, w: 0.99547124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Spine
+      parentName: Beta:Hips
+      position: {x: -0, y: 0.092263, z: 0.015771}
+      rotation: {x: 0.04059326, y: -0.010138354, z: 0.01734777, w: 0.9989737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Spine1
+      parentName: Beta:Spine
+      position: {x: -0, y: 0.16253999, z: -0.001656}
+      rotation: {x: 0.08616687, y: -0.01875826, z: 0.023155535, w: 0.99583495}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Spine2
+      parentName: Beta:Spine1
+      position: {x: -0, y: 0.13639599, z: -0.012922999}
+      rotation: {x: 0.08652798, y: -0.017474204, z: 0.022739392, w: 0.99583656}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Neck
+      parentName: Beta:Spine2
+      position: {x: -0, y: 0.13877401, z: -0.043541998}
+      rotation: {x: 0.0071735233, y: 0.03268374, z: -0.02870508, w: 0.9990277}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Neck1
+      parentName: Beta:Neck
+      position: {x: -0, y: 0.0434, z: 0.009269}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:Head
+      parentName: Beta:Neck1
+      position: {x: -0, y: 0.040266, z: 0.0085849995}
+      rotation: {x: -0.18009958, y: 0.08883058, z: 0.009434657, w: 0.97958374}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:HeadTop_End
+      parentName: Beta:Head
+      position: {x: -0, y: 0.23029698, z: 0.001231}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftShoulder
+      parentName: Beta:Spine2
+      position: {x: -0.061442, y: 0.10187, z: -0.037932}
+      rotation: {x: 0.005144402, y: 0.00701683, z: 0.06284403, w: 0.9979855}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftArm
+      parentName: Beta:LeftShoulder
+      position: {x: -0.123191, y: -0.01113, z: -0.017934998}
+      rotation: {x: 0.0012235882, y: 0.19259833, z: 0.28493643, w: 0.93899715}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftForeArm
+      parentName: Beta:LeftArm
+      position: {x: -0.27686998, y: 0, z: 0}
+      rotation: {x: -0.0068554864, y: 0.46693468, z: 0.0036197684, w: 0.88425785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHand
+      parentName: Beta:LeftForeArm
+      position: {x: -0.278738, y: 0, z: 0}
+      rotation: {x: -0.06090876, y: 0.048910912, z: 0.11427932, w: 0.9903727}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandThumb1
+      parentName: Beta:LeftHand
+      position: {x: -0.023784999, y: -0.010029, z: 0.026208999}
+      rotation: {x: 0.000000009473492, y: -2.6294223e-25, z: -2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandThumb2
+      parentName: Beta:LeftHandThumb1
+      position: {x: -0.033624, y: -0.010029, z: 0.028397998}
+      rotation: {x: 0.014439109, y: -0.050940312, z: -0.0080110105, w: 0.9985652}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandThumb3
+      parentName: Beta:LeftHandThumb2
+      position: {x: -0.045018, y: -0.013444999, z: 0.021782998}
+      rotation: {x: 0.007319438, y: -0.025454056, z: -0.0034439468, w: 0.99964327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandThumb4
+      parentName: Beta:LeftHandThumb3
+      position: {x: -0.025999999, y: -0.01, z: 0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandMiddle1
+      parentName: Beta:LeftHand
+      position: {x: -0.104638994, y: 0.006148, z: 0.004298}
+      rotation: {x: -0.000000026187438, y: 0.000000040453905, z: 0.35772085, w: 0.9338286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandMiddle2
+      parentName: Beta:LeftHandMiddle1
+      position: {x: -0.057921, y: 0, z: 0}
+      rotation: {x: -0.000000010598343, y: 0.00000002765545, z: 0.20865765, w: 0.9779887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandMiddle3
+      parentName: Beta:LeftHandMiddle2
+      position: {x: -0.037132, y: 0, z: 0}
+      rotation: {x: 0.00000003325438, y: -0.000000005104517, z: 0.104907736, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandMiddle4
+      parentName: Beta:LeftHandMiddle3
+      position: {x: -0.022999998, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandIndex1
+      parentName: Beta:LeftHand
+      position: {x: -0.103944995, y: 0.006148, z: 0.027054999}
+      rotation: {x: -0.000000026187438, y: 0.000000040453905, z: 0.35772085, w: 0.9338286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandIndex2
+      parentName: Beta:LeftHandIndex1
+      position: {x: -0.055493, y: 0, z: 0}
+      rotation: {x: -0.000000010598343, y: 0.00000002765545, z: 0.20865765, w: 0.9779887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandIndex3
+      parentName: Beta:LeftHandIndex2
+      position: {x: -0.033910997, y: 0, z: 0}
+      rotation: {x: 0.00000003325438, y: -0.000000005104517, z: 0.104907736, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandIndex4
+      parentName: Beta:LeftHandIndex3
+      position: {x: -0.024999999, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandRing1
+      parentName: Beta:LeftHand
+      position: {x: -0.103252, y: 0.003211, z: -0.018755}
+      rotation: {x: -0.00000003849286, y: -0.0000000024619602, z: 0.35772085, w: 0.9338286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandRing2
+      parentName: Beta:LeftHandRing1
+      position: {x: -0.054452, y: 0, z: 0}
+      rotation: {x: 0.000000013912359, y: -0.000000030892178, z: 0.20865762, w: 0.9779888}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandRing3
+      parentName: Beta:LeftHandRing2
+      position: {x: -0.037132, y: 0, z: 0}
+      rotation: {x: 0.00000001992571, y: -0.000000036333105, z: 0.10490769, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandRing4
+      parentName: Beta:LeftHandRing3
+      position: {x: -0.02, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandPinky1
+      parentName: Beta:LeftHand
+      position: {x: -0.10012999, y: -0.00078299997, z: -0.039670996}
+      rotation: {x: -0.000000026187438, y: 0.000000040453905, z: 0.35772085, w: 0.9338286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandPinky2
+      parentName: Beta:LeftHandPinky1
+      position: {x: -0.036763, y: 0, z: 0}
+      rotation: {x: -0.000000010598343, y: 0.00000002765545, z: 0.20865765, w: 0.9779887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandPinky3
+      parentName: Beta:LeftHandPinky2
+      position: {x: -0.028113, y: 0, z: 0}
+      rotation: {x: 0.00000003325438, y: -0.000000005104517, z: 0.104907736, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftHandPinky4
+      parentName: Beta:LeftHandPinky3
+      position: {x: -0.029000001, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightShoulder
+      parentName: Beta:Spine2
+      position: {x: 0.061402, y: 0.10187, z: -0.037932}
+      rotation: {x: 0.009419689, y: -0.028046934, z: -0.117121466, w: 0.9926768}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightArm
+      parentName: Beta:RightShoulder
+      position: {x: 0.123231, y: -0.01113, z: -0.017934998}
+      rotation: {x: 0.07413664, y: 0.064954095, z: -0.2995829, w: 0.94896513}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightForeArm
+      parentName: Beta:RightArm
+      position: {x: 0.27686998, y: 0, z: 0}
+      rotation: {x: -0.03195511, y: -0.56307, z: -0.021791676, w: 0.8255036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHand
+      parentName: Beta:RightForeArm
+      position: {x: 0.278738, y: 0, z: 0}
+      rotation: {x: -0.09458927, y: 0.05633086, z: -0.17915563, w: 0.9776415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandThumb1
+      parentName: Beta:RightHand
+      position: {x: 0.025178, y: -0.009366999, z: 0.025137}
+      rotation: {x: 9.9656854e-17, y: 0.000000011541013, z: -0.000000008635018, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandThumb2
+      parentName: Beta:RightHandThumb1
+      position: {x: 0.032638, y: -0.010869999, z: 0.029669}
+      rotation: {x: 0.014439134, y: 0.050940182, z: 0.008010824, w: 0.9985652}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandThumb3
+      parentName: Beta:RightHandThumb2
+      position: {x: 0.044165, y: -0.013703, z: 0.02135}
+      rotation: {x: 0.007319414, y: 0.025454048, z: 0.0034437715, w: 0.99964327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandThumb4
+      parentName: Beta:RightHandThumb3
+      position: {x: 0.025999999, y: -0.01, z: 0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandIndex1
+      parentName: Beta:RightHand
+      position: {x: 0.104665, y: 0.004896, z: 0.027119998}
+      rotation: {x: 0.00000005515219, y: -0.000000037226794, z: -0.34899893, w: 0.9371231}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandIndex2
+      parentName: Beta:RightHandIndex1
+      position: {x: 0.053767998, y: 0, z: 0}
+      rotation: {x: 0.00000003911151, y: -0.000000032841402, z: -0.20865782, w: 0.9779887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandIndex3
+      parentName: Beta:RightHandIndex2
+      position: {x: 0.033855, y: 0, z: 0}
+      rotation: {x: 0.000000038374893, y: 0.000000012168172, z: -0.104907766, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandIndex4
+      parentName: Beta:RightHandIndex3
+      position: {x: 0.025999999, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandMiddle1
+      parentName: Beta:RightHand
+      position: {x: 0.107595995, y: 0.004896, z: 0.004278}
+      rotation: {x: 0.00000005515219, y: -0.000000037226794, z: -0.34899893, w: 0.9371231}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandMiddle2
+      parentName: Beta:RightHandMiddle1
+      position: {x: 0.056167997, y: 0, z: 0}
+      rotation: {x: 0.00000003911151, y: -0.000000032841402, z: -0.20865782, w: 0.9779887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandMiddle3
+      parentName: Beta:RightHandMiddle2
+      position: {x: 0.037364, y: 0, z: 0}
+      rotation: {x: 0.000000038374893, y: 0.000000012168172, z: -0.104907766, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandMiddle4
+      parentName: Beta:RightHandMiddle3
+      position: {x: 0.022999998, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandRing1
+      parentName: Beta:RightHand
+      position: {x: 0.104701996, y: 0.003879, z: -0.019363}
+      rotation: {x: -0.0000000575899, y: -0.00000003973301, z: -0.34899914, w: 0.93712306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandRing2
+      parentName: Beta:RightHandRing1
+      position: {x: 0.054013, y: 0, z: 0}
+      rotation: {x: 0.00000006380838, y: 0.000000077133144, z: -0.20865759, w: 0.9779888}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandRing3
+      parentName: Beta:RightHandRing2
+      position: {x: 0.033915997, y: 0, z: 0}
+      rotation: {x: 0.000000012018987, y: 0.000000027170021, z: -0.10490773, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandRing4
+      parentName: Beta:RightHandRing3
+      position: {x: 0.022, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandPinky1
+      parentName: Beta:RightHand
+      position: {x: 0.099715, y: -0.001191, z: -0.03954}
+      rotation: {x: 0.00000005515219, y: -0.000000037226794, z: -0.34899893, w: 0.9371231}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandPinky2
+      parentName: Beta:RightHandPinky1
+      position: {x: 0.036528, y: 0, z: 0}
+      rotation: {x: 0.00000003911151, y: -0.000000032841402, z: -0.20865782, w: 0.9779887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandPinky3
+      parentName: Beta:RightHandPinky2
+      position: {x: 0.02782, y: 0, z: 0}
+      rotation: {x: 0.000000038374893, y: 0.000000012168172, z: -0.104907766, w: 0.994482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightHandPinky4
+      parentName: Beta:RightHandPinky3
+      position: {x: 0.029000001, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftUpLeg
+      parentName: Beta:Hips
+      position: {x: -0.096338, y: -0.032732997, z: 0}
+      rotation: {x: -0.29299632, y: -0.05536078, z: 0.024608849, w: 0.9541922}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftLeg
+      parentName: Beta:LeftUpLeg
+      position: {x: -0, y: -0.4173, z: -0.0173}
+      rotation: {x: 0.5126204, y: 0.06573269, z: 0.057992578, w: 0.8541291}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftFoot
+      parentName: Beta:LeftLeg
+      position: {x: -0.000126, y: -0.39189997, z: -0.008477}
+      rotation: {x: -0.118972614, y: -0.008421531, z: 0.04300267, w: 0.9919301}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftToeBase
+      parentName: Beta:LeftFoot
+      position: {x: 0.001833, y: -0.121930994, z: 0.082823}
+      rotation: {x: -0.0076444363, y: -0.0011514195, z: -0.0015815329, w: 0.9999689}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:LeftFootToeBase_End
+      parentName: Beta:LeftToeBase
+      position: {x: -0, y: 0, z: 0.101681}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightUpLeg
+      parentName: Beta:Hips
+      position: {x: 0.096338, y: -0.032732997, z: 0}
+      rotation: {x: -0.14731017, y: 0.07340719, z: 0.083718315, w: 0.98280334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightLeg
+      parentName: Beta:RightUpLeg
+      position: {x: -0, y: -0.4173, z: -0.0173}
+      rotation: {x: 0.21519224, y: 0.06272923, z: 0.024528038, w: 0.97424626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightFoot
+      parentName: Beta:RightLeg
+      position: {x: -0.000126, y: -0.39189997, z: -0.008477}
+      rotation: {x: -0.12073705, y: 0.007084318, z: -0.049362678, w: 0.9914312}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightToeBase
+      parentName: Beta:RightFoot
+      position: {x: 0.001833, y: -0.121930994, z: 0.082823}
+      rotation: {x: -0.000098729855, y: 0.000034152337, z: 0.00015493485, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beta:RightFootToeBase_End
+      parentName: Beta:RightToeBase
+      position: {x: -0.000032, y: 0, z: 0.101681}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
