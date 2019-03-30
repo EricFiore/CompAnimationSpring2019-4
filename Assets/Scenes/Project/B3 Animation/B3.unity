@@ -2712,7 +2712,7 @@ GameObject:
   - component: {fileID: 295932629}
   - component: {fileID: 295932630}
   m_Layer: 0
-  m_Name: Stalagmite1 (14)
+  m_Name: rockFive
   m_TagString: rocks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15528,6 +15528,7 @@ MonoBehaviour:
   _rockTwoMove: {fileID: 192603621}
   _rockThreeMove: {fileID: 2145586577}
   _rockFourMove: {fileID: 1316970163}
+  _rockFiveMove: {fileID: 295932630}
   _groundRockOne: {fileID: 467516906}
 --- !u!114 &1774601606
 MonoBehaviour:
