@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Project/B2 Animation/PartTwo/AnimationPartTwo.unity
     guid: cf4d682ba3cde2642bb9b3f27f61c908
+  - enabled: 1
+    path: Assets/Scenes/Project/B3 Animation/B3.unity
+    guid: 00786aff7f0ff624b94b6c91d0f1d024
   m_configObjects: {}

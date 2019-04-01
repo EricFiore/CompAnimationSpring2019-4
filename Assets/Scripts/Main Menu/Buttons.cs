@@ -18,6 +18,11 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("AnimationPartTwo");
     }
+	
+	public void SC3()
+    {
+        SceneManager.LoadScene("B3");
+    }
 
 	public void Quit()
 	{
