@@ -22,6 +22,8 @@ TagManager:
   - NoHighlight
   - groundRock
   - gold
+  - red
+  - green
   layers:
   - Default
   - TransparentFX
