@@ -13,7 +13,9 @@ public class BehaviorScriptThree : MonoBehaviour
     public BehaviorAgent behaviorAgent;
     public GameObject participant;
     public GameObject trafficLight;
-   // public IsVisible _isVisible;
+	bool isRed = false;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,7 @@ public class BehaviorScriptThree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		//Debug.Log(_isVisible.getColor());
+	
     }
 
     
@@ -40,17 +42,27 @@ public class BehaviorScriptThree : MonoBehaviour
 
     protected Node BuildTreeRoot()
     {
-        //Func<bool> act = () => _isVisible.getColor();
-        Node roaming = new DecoratorLoop(
-                        new SequenceShuffle(
-                        this.ST_ApproachAndWait(this.wanderOne),
-                        this.ST_ApproachAndWait(this.wanderTwo),
-                        this.ST_ApproachAndWait(this.wanderThree),
-                        this.ST_ApproachAndWait(this.wanderFour)));
+			
+        if(isRed == false)
+		{
+			Node roaming = new DecoratorLoop(
+							new SequenceShuffle(
+							this.ST_ApproachAndWait(this.wanderOne),
+							this.ST_ApproachAndWait(this.wanderTwo),
+							this.ST_ApproachAndWait(this.wanderThree),
+							this.ST_ApproachAndWait(this.wanderFour)));
+							return roaming;
+		}
+		
+		else
+		{
+			Node roaming = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("FIGHT", true), new LeafWait(1000));
+			return roaming;
+		}
         //Node Action = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("CROWDPUMP", true), new LeafWait(1000));
         //Node Trigger = new DecoratorLoop(new LeafAssert(act));
         //Node sequenceNodes = new Sequence (new LeafAssert(act), roaming);
         //Node selectingNode = new DecoratorLoop(new Selector(sequenceNodes, Action));
-        return roaming;
+        
     }
 }

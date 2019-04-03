@@ -1808,6 +1808,7 @@ MonoBehaviour:
   cam: {fileID: 256521619}
   checkedObject: {fileID: 1423280728}
   normalColor: {fileID: 2100000, guid: b0bfab8e67a647e458076310f69a9d3e, type: 2}
+  red: 0
 --- !u!1 &279238289
 GameObject:
   m_ObjectHideFlags: 0
@@ -8504,6 +8505,7 @@ GameObject:
   - component: {fileID: 1423280725}
   - component: {fileID: 1423280724}
   - component: {fileID: 1423280729}
+  - component: {fileID: 1423280723}
   m_Layer: 8
   m_Name: Cube (1)
   m_TagString: red
@@ -8511,6 +8513,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1423280723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423280722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e58a36a120d5c46a7a98715a281074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderOne: {fileID: 292324584}
+  wanderTwo: {fileID: 1426199101}
+  wanderThree: {fileID: 2080513132}
+  wanderFour: {fileID: 2061989171}
+  participant: {fileID: 1384989316}
+  trafficLight: {fileID: 1423280722}
 --- !u!114 &1423280724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12657,7 +12677,6 @@ GameObject:
   - component: {fileID: 2061989170}
   - component: {fileID: 2061989169}
   - component: {fileID: 2061989168}
-  - component: {fileID: 2061989167}
   m_Layer: 0
   m_Name: WanderFour
   m_TagString: Untagged
@@ -12665,24 +12684,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2061989167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061989166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13e58a36a120d5c46a7a98715a281074, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wanderOne: {fileID: 292324584}
-  wanderTwo: {fileID: 1426199101}
-  wanderThree: {fileID: 2080513132}
-  wanderFour: {fileID: 2061989171}
-  participant: {fileID: 1384989316}
-  trafficLight: {fileID: 1423280722}
 --- !u!65 &2061989168
 BoxCollider:
   m_ObjectHideFlags: 0

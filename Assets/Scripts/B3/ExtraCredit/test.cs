@@ -12,7 +12,7 @@ public UnityEngine.Camera cam;
 public Transform checkedObject;
 public Material normalColor;
 bool isvisible;
-bool red;
+public bool red;
 
 void Start()
 {
@@ -45,5 +45,9 @@ void Update()
 	Debug.Log(red);
 }
 
-
+public bool checkColor(bool check)
+{
+	check = red;
+	return check;
+}
 }
