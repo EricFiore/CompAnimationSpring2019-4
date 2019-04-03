@@ -40,6 +40,7 @@ void Update()
     }
     else
         isvisible = false;
+		red = true;
 	
 	Debug.Log(red);
 }
