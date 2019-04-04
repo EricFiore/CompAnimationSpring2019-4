@@ -13,8 +13,8 @@ public class BehaviorScriptThree : MonoBehaviour
     public BehaviorAgent behaviorAgent;
     public GameObject participant;
     public GameObject trafficLight;
-	bool isRed = false;
-
+    bool isRed = false;
+    public test _test;
 
 
     // Start is called before the first frame update
@@ -28,9 +28,22 @@ public class BehaviorScriptThree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	
+        isRed = _test.checkColor();
+        if (isRed)
+        {
+            behaviorAgent.StopBehavior();
+        }
+        else
+        {
+            behaviorAgent.StartBehavior();
+        }
+        Debug.Log("in behavior" + isRed);
     }
 
+    protected bool retrieveLightInfo()
+    {
+        return _test.checkColor();
+    }
     
     
 
@@ -42,7 +55,6 @@ public class BehaviorScriptThree : MonoBehaviour
 
     protected Node BuildTreeRoot()
     {
-			
         if(isRed == false)
 		{
 			Node roaming = new DecoratorLoop(
@@ -56,7 +68,7 @@ public class BehaviorScriptThree : MonoBehaviour
 		
 		else
 		{
-			Node roaming = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("FIGHT", true), new LeafWait(1000));
+			Node roaming = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_BodyAnimation("FIGHT", true), new LeafWait(1000));
 			return roaming;
 		}
         //Node Action = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("CROWDPUMP", true), new LeafWait(1000));

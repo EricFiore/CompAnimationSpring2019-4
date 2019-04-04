@@ -7,21 +7,12 @@ public class Buttons : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Playground");
-    }
-	
-	public void SC1()
-    {
-        SceneManager.LoadScene("Animation");
-    }
-	public void SC2()
-    {
-        SceneManager.LoadScene("AnimationPartTwo");
+        SceneManager.LoadScene("B3");
     }
 	
 	public void SC3()
     {
-        SceneManager.LoadScene("B3");
+        SceneManager.LoadScene("ExtraCredit");
     }
 
 	public void Quit()

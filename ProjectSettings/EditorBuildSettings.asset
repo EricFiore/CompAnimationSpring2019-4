@@ -8,16 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Project/Main Menu/Main Menu.unity
     guid: 299e8126d7ff5ac4e96616cb7175b036
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Project/B2 Animation/PartThree/Playground.unity
     guid: 4026448e55ef48444964d03a739b5cf7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Project/B2 Animation/PartOne/Animation.unity
     guid: 462610a04a1ad0a468405b8247d96747
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Project/B2 Animation/PartTwo/AnimationPartTwo.unity
     guid: cf4d682ba3cde2642bb9b3f27f61c908
   - enabled: 1
     path: Assets/Scenes/Project/B3 Animation/B3.unity
     guid: 00786aff7f0ff624b94b6c91d0f1d024
+  - enabled: 1
+    path: Assets/Scenes/Project/B3 Animation/ExtraCredit.unity
+    guid: 2674234c6408d7441a6b182ffdcd0c02
   m_configObjects: {}

@@ -29,25 +29,29 @@ void Update()
 		if(checkedObject.tag == "red")
 		{
 			red = true;
+            //Debug.Log(red);
 		}
 		
 		else if(checkedObject.tag == "green")
 		{
 			red = false;
+            //Debug.Log(red);
 		}
 		
         isvisible = true;
     }
-    else
-        isvisible = false;
-		red = false;
+        else
+        {
+            isvisible = false;
+            red = false;
+            //Debug.Log(red);
+        }
 	
-	Debug.Log(red);
 }
 
-public bool checkColor(bool check)
-{
-	check = red;
-	return check;
-}
+    public bool checkColor()
+    {
+        //Debug.Log("in check color" + red);
+	    return red;
+    }
 }
