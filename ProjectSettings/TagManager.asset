@@ -24,6 +24,7 @@ TagManager:
   - gold
   - red
   - green
+  - HeroOne
   layers:
   - Default
   - TransparentFX
