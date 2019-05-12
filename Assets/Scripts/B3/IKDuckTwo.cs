@@ -12,8 +12,8 @@ public class IKDuckTwo : MonoBehaviour
     Transform otherGuyChest;
     [SerializeField]
     Transform sword;
-    [SerializeField]
-    Transform CheckPointTwo;
+    //[SerializeField]
+   //Transform CheckPointTwo;
 
     static readonly Vector3 offset = new Vector3(0.02f, 0.04f, 0);
 
@@ -57,7 +57,7 @@ public class IKDuckTwo : MonoBehaviour
 
         float distanceToOtherPlayer = Vector3.Distance(otherGuyChestPosition, hand.position);
         float distanceToSword = Vector3.Distance(swordPosition, hand.position);
-        float distanceToCheckTwo = Vector3.Distance(CheckPointTwo.position, hand.position);
+       // float distanceToCheckTwo = Vector3.Distance(CheckPointTwo.position, hand.position);
         Debug.Log(distanceToSword);
         if (distanceToOtherPlayer < 1.5f)
         {
@@ -71,10 +71,10 @@ public class IKDuckTwo : MonoBehaviour
         {
             animator.SetInteger("condition", 1);
         }
-        if (distanceToCheckTwo < 2.0f)
-        {
-            animator.SetInteger("condition", 0);
-        }
+       // if (distanceToCheckTwo < 2.0f)
+        //{
+        //    animator.SetInteger("condition", 0);
+       // }
     }
 }
 

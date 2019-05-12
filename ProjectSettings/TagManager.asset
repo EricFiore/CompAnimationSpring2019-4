@@ -26,6 +26,9 @@ TagManager:
   - green
   - HeroOne
   - HeroTwo
+  - pickup
+  - unlock
+  - dead
   layers:
   - Default
   - TransparentFX
