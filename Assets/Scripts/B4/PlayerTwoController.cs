@@ -9,7 +9,7 @@ public class PlayerTwoController : MonoBehaviour
     private Vector3 moveDir = Vector3.zero;
     private float gravity = 8.0f;
     private CharacterController controller;
-
+	public GameObject participant;
     public MoveObject moveObject;
 
 
@@ -24,6 +24,7 @@ public class PlayerTwoController : MonoBehaviour
     {
         if (moveObject.getPlayerTwoStatus())
         {
+			participant.name = "chosen";
             if (Input.GetKey(KeyCode.W))
             {
                 moveDir = new Vector3(0, 0, 1);
@@ -39,5 +40,10 @@ public class PlayerTwoController : MonoBehaviour
             moveDir.y -= gravity * Time.deltaTime;
             controller.Move(moveDir * Time.deltaTime);
         }
+		
+		else
+		{
+			participant.name = "p2";
+		}
     }
 }

@@ -10,6 +10,7 @@ public class PlayerOneController : MonoBehaviour
     private Vector3 moveDir = Vector3.zero;
     private float gravity = 8.0f;
     private CharacterController controller;
+	public GameObject participant;
 
     public MoveObject moveObject;
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class PlayerOneController : MonoBehaviour
     {
         if (moveObject.getPlayerOneStatus())
         {
+			participant.name = "chosen";
             if (Input.GetKey(KeyCode.W))
             {
                 moveDir = new Vector3(0, 0, 1);
@@ -38,5 +40,11 @@ public class PlayerOneController : MonoBehaviour
             moveDir.y -= gravity * Time.deltaTime;
             controller.Move(moveDir * Time.deltaTime);
         }
+		
+		else
+		{
+			participant.name = "p1";
+		}
+		
     }
 }
