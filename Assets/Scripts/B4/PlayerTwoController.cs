@@ -10,7 +10,7 @@ public class PlayerTwoController : MonoBehaviour
     private float gravity = 8.0f;
     private CharacterController controller;
 
-    public TwoHeroController twoHeroController;
+    public MoveObject moveObject;
 
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class PlayerTwoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (twoHeroController.getPlayerTwoStatus())
+        if (moveObject.getPlayerTwoStatus())
         {
             if (Input.GetKey(KeyCode.W))
             {

@@ -25,6 +25,7 @@ TagManager:
   - red
   - green
   - HeroOne
+  - HeroTwo
   layers:
   - Default
   - TransparentFX

@@ -7,6 +7,8 @@ public class MoveObject : MonoBehaviour
 
     private bool rockOneSelected = false;
     private bool groundRockSelected = false;
+    private bool heroOneSelected = false;
+    private bool heroTwoSelected = false;
 
     public float force = 5;
     public float speed;
@@ -18,6 +20,7 @@ public class MoveObject : MonoBehaviour
     public GroundRockOne _groundRockOne;
 
 
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -25,10 +28,8 @@ public class MoveObject : MonoBehaviour
             Debug.Log("moues One pressed");
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                Debug.Log("physics hit");
                 if (hit.collider.CompareTag("rocks") && !rockOneSelected)
                 {
                     Debug.Log("rocks detected");
@@ -60,9 +61,26 @@ public class MoveObject : MonoBehaviour
                     _groundRockOne.deselectRock();
                     groundRockSelected = false;
                 }
+                if (hit.collider.CompareTag("HeroOne"))
+                {
+                    heroOneSelected = true;
+                    heroTwoSelected = false;
+                }
+                if (hit.collider.CompareTag("HeroTwo"))
+                {
+                    heroOneSelected = false;    
+                    heroTwoSelected = true;
+                }
             }
         }
     }
 
-
+    public bool getPlayerOneStatus()
+    {
+        return heroOneSelected;
+    }
+    public bool getPlayerTwoStatus()
+    {
+        return heroTwoSelected;
+    }
 }
