@@ -29,6 +29,8 @@ TagManager:
   - pickup
   - unlock
   - dead
+  - grow
+  - shrink
   layers:
   - Default
   - TransparentFX
