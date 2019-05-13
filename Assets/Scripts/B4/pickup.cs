@@ -95,10 +95,10 @@ public class pickup : MonoBehaviour
 		{
 
 			p1.gameObject.SetActive (false);
-			enemy.gameObject.tag = "dead";
+			p1.gameObject.tag = "dead";
             wayPoint.name = "arrived";
 			transform.localScale = new Vector3(x, y, z);
 		}
-		
+
     }
 }
