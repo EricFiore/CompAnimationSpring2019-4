@@ -7,15 +7,21 @@ using System;
 public class Behav2: MonoBehaviour
 {
 	public Transform wanderOne;
+    public Transform wanderTwo;
     public BehaviorAgent behaviorAgent;
     public GameObject participant;
-    bool isRed = false;
+    public GameObject cubeOne;
+    public GameObject cubeTwo;
+    public GameObject cubeThree;
+    bool isChosen = false;
     TwoHeroController _test;
 
+    private int gameStage;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameStage = 0;
         behaviorAgent = new BehaviorAgent(this.BuildTreeRoot());
         BehaviorManager.Instance.Register(behaviorAgent);
         behaviorAgent.StartBehavior();
@@ -24,16 +30,41 @@ public class Behav2: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(participant.name == "chosen")
+        if (wanderOne.name == "arrived" && gameStage == 0)
+        {
+            behaviorAgent.StopBehavior();
+            behaviorAgent = new BehaviorAgent(this.BuildTreeRoot());
+            BehaviorManager.Instance.Register(behaviorAgent);
+            behaviorAgent.StartBehavior();
+            wanderOne.name = "afterArrive in behav2";
+            gameStage++;
+        }
+        if (participant.name == "chosen")
 		{
-			isRed = true;
+            isChosen = true;
 		}
 		else
 		{
-			isRed = false;
-		}
+            isChosen = false;
+            float distanceToBox = Vector3.Distance(participant.transform.position, wanderOne.position);
+            if (distanceToBox < 1.8f)
+            {
+                if (cubeOne.tag == "pickup")
+                {
+                    participant.transform.LookAt(cubeOne.transform);
+                }
+                else if (cubeOne.tag == "dead" && cubeTwo.tag == "pickup")
+                {
+                    participant.transform.LookAt(cubeTwo.transform);
+                }
+                else
+                {
+                    participant.transform.LookAt(cubeThree.transform);
+                }
+            }
+        }
 
-        if (isRed == true)
+        if (isChosen == true)
         {
             behaviorAgent.StopBehavior();
         }
@@ -41,6 +72,7 @@ public class Behav2: MonoBehaviour
         {
             behaviorAgent.StartBehavior();
         }
+
 
     }
 
@@ -53,21 +85,28 @@ public class Behav2: MonoBehaviour
 
     protected Node BuildTreeRoot()
     {
-        if(isRed == false)
-		{
-			Node roaming = new DecoratorLoop(
-							new SequenceShuffle(
-							this.ST_ApproachAndWait(this.wanderOne)
-							));
-							return roaming;
-		}
-		
-		else
-		{
-			Node roaming = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_BodyAnimation("FIGHT", true), new LeafWait(1000));
-			return roaming;
-		}
-
-        
+        if (wanderOne.name != "arrived")
+        {
+            if (isChosen == false)
+            {
+                Node roaming = new Sequence(
+                        this.ST_ApproachAndWait(this.wanderOne),
+                        (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("POINTING", true)),
+                        (new LeafWait(1000)));
+                return roaming;
+            }
+            else
+            {
+                Node roaming = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_BodyAnimation("FIGHT", true), new LeafWait(1000));
+                return roaming;
+            }
+        }
+        else
+        {
+            Node roaming = new Sequence(
+                        this.ST_ApproachAndWait(this.wanderTwo),
+                        (new LeafWait(1000)));
+            return roaming;
+        }
     }
 }

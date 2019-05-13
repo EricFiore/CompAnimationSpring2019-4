@@ -11,6 +11,7 @@ public class pickup : MonoBehaviour
 	public Collider  piece1;
 	public Collider  piece2;
 	public Collider  piece3;
+    public GameObject wayPoint;
 
 
     void Start()
@@ -21,7 +22,7 @@ public class pickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(piece1.gameObject.tag == "dead" && piece2.gameObject.tag == "dead" && piece3.gameObject.tag == "dead")
+        if (piece1.gameObject.tag == "dead" && piece2.gameObject.tag == "dead" && piece3.gameObject.tag == "dead")
 		{
 			counter = 3;
 		}
@@ -40,6 +41,7 @@ public class pickup : MonoBehaviour
 		{
 
 			unlock.gameObject.SetActive (false);
+            wayPoint.name = "arrived";
 		}
 		
     }

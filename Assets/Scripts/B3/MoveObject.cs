@@ -61,15 +61,27 @@ public class MoveObject : MonoBehaviour
                     _groundRockOne.deselectRock();
                     groundRockSelected = false;
                 }
-                if (hit.collider.CompareTag("HeroOne"))
+                if (hit.collider.CompareTag("HeroOne") && !heroOneSelected)
                 {
+                    Debug.Log("hero on is selected");
                     heroOneSelected = true;
                     heroTwoSelected = false;
                 }
-                if (hit.collider.CompareTag("HeroTwo"))
+                else if (hit.collider.CompareTag("HeroOne") && heroOneSelected)
+                {
+                    Debug.Log("hero one is deselected");
+                    heroOneSelected = false;
+                    heroTwoSelected = false;
+                }
+                if (hit.collider.CompareTag("HeroTwo") && !heroTwoSelected)
                 {
                     heroOneSelected = false;    
                     heroTwoSelected = true;
+                }
+                else if (hit.collider.CompareTag("HeroTwo") && heroTwoSelected)
+                {
+                    heroOneSelected = false;
+                    heroTwoSelected = false;
                 }
             }
         }
