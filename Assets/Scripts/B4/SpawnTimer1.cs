@@ -14,14 +14,19 @@ public class SpawnTimer1 : MonoBehaviour
 		num = Random.Range(1,8);
         p1 = GetComponent<Rigidbody>();
 		
+		if(num == 1 || num == 2)
+		{
+			p1.gameObject.SetActive (false);
+			p2.gameObject.SetActive (false);
+		}
 		
-		if(num <= 3)
+		if(num <= 4 && num >2)
 		{
 			p1.gameObject.SetActive (true);
 			p2.gameObject.SetActive (false);
 		}
 		
-		else
+		if(num > 4)
 		{
 			p2.gameObject.SetActive (true);
 			p1.gameObject.SetActive (false);
@@ -33,6 +38,6 @@ public class SpawnTimer1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         transform.Rotate (new Vector3 (15, 30, 45) * Time.deltaTime);
+		
     }
 }
