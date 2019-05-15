@@ -116,6 +116,8 @@ public class Behav: MonoBehaviour
                 Node roaming = new Sequence(
                         this.ST_ApproachAndWait(this.wanderOne),
                         (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("POINTING", true)),
+						 (new LeafWait(500)),
+						(participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("POINTING", false)),
                         (new LeafWait(1000)));
                 return roaming;
             }
