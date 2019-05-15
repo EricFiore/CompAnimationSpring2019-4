@@ -22,7 +22,6 @@ public class SpawnTimer : MonoBehaviour
 			p1.gameObject.SetActive (true);
 		}
 		
-		Debug.Log(num);
     }
 
     // Update is called once per frame

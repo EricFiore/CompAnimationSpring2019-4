@@ -9,6 +9,7 @@ public class MoveObject : MonoBehaviour
     private bool groundRockSelected = false;
     private bool heroOneSelected = false;
     private bool heroTwoSelected = false;
+    private bool enemyOneSelected = false;
 
     public float force = 5;
     public float speed;
@@ -83,6 +84,14 @@ public class MoveObject : MonoBehaviour
                     heroOneSelected = false;
                     heroTwoSelected = false;
                 }
+                if (hit.collider.CompareTag("enemy") && !enemyOneSelected)
+                {
+                    enemyOneSelected = true;
+                }
+                else if (hit.collider.CompareTag("HeroOne") && !enemyOneSelected)
+                {
+                    enemyOneSelected = false;
+                }
             }
         }
     }
@@ -94,5 +103,9 @@ public class MoveObject : MonoBehaviour
     public bool getPlayerTwoStatus()
     {
         return heroTwoSelected;
+    }
+    public bool getEnemyStatus()
+    {
+        return enemyOneSelected;
     }
 }

@@ -8,19 +8,26 @@ public class Behav2: MonoBehaviour
 {
 	public Transform wanderOne;
     public Transform wanderTwo;
+    public Transform wanderThree;
     public BehaviorAgent behaviorAgent;
     public GameObject participant;
+    public GameObject enemy;
     public GameObject cubeOne;
     public GameObject cubeTwo;
     public GameObject cubeThree;
+    public GameObject sword;
     bool isChosen = false;
+    private bool finalStage;
     TwoHeroController _test;
 
     private int gameStage;
+    private bool deadSword;
 
     // Start is called before the first frame update
     void Start()
     {
+        deadSword = false;
+        finalStage = false;
         gameStage = 0;
         behaviorAgent = new BehaviorAgent(this.BuildTreeRoot());
         BehaviorManager.Instance.Register(behaviorAgent);
@@ -39,6 +46,16 @@ public class Behav2: MonoBehaviour
             wanderOne.name = "afterArrive in behav2";
             gameStage++;
         }
+
+        if (sword.name == "deadSword" && !deadSword)
+        {
+            deadSword = true;
+            behaviorAgent.StopBehavior();
+            behaviorAgent = new BehaviorAgent(this.BuildTreeRoot());
+            BehaviorManager.Instance.Register(behaviorAgent);
+            behaviorAgent.StartBehavior();
+        }
+
         if (participant.name == "chosen")
 		{
             isChosen = true;
@@ -62,6 +79,15 @@ public class Behav2: MonoBehaviour
                     participant.transform.LookAt(cubeThree.transform);
                 }
             }
+        }
+
+        if (enemy.name == "coward" && !finalStage)
+        {
+            finalStage = true;
+            behaviorAgent.StopBehavior();
+            behaviorAgent = new BehaviorAgent(this.BuildTreeRoot());
+            BehaviorManager.Instance.Register(behaviorAgent);
+            behaviorAgent.StartBehavior();
         }
 
         if (isChosen == true)
@@ -100,6 +126,20 @@ public class Behav2: MonoBehaviour
                 Node roaming = new Sequence(participant.GetComponent<BehaviorMecanim>().Node_BodyAnimation("FIGHT", true), new LeafWait(1000));
                 return roaming;
             }
+        }
+        else if (finalStage && !deadSword)
+        {
+            Node roaming = new Sequence(
+                       this.ST_ApproachAndWait(this.wanderThree),
+                       (new LeafWait(1000)));
+            return roaming;
+        }
+        else if (deadSword)
+        {
+            Node roaming = new Sequence(
+                       this.ST_ApproachAndWait(this.wanderOne),
+                       (new LeafWait(1000)));
+            return roaming;
         }
         else
         {

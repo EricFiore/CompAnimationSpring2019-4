@@ -36,7 +36,7 @@ public class pickup : MonoBehaviour
 			counter = 3;
 		}
 		
-		if(piece4.gameObject.tag == "dead")
+		if(piece4.gameObject.tag == "dead" && piece4.name == "p1")
 		{
 			counter = 3;
 		}
@@ -55,14 +55,16 @@ public class pickup : MonoBehaviour
         {
             other.gameObject.SetActive (false);
 			other.gameObject.tag = "dead";
-			transform.localScale = new Vector3(transform.localScale.x * 3, transform.localScale.y * 3, transform.localScale.z * 3);		 
+            other.name = "p1";
+            transform.localScale = new Vector3(transform.localScale.x * 3, transform.localScale.y * 3, transform.localScale.z * 3);		 
         }
 		
 		if (other.gameObject.CompareTag ("shrink"))
         {
             other.gameObject.SetActive (false);
 			other.gameObject.tag = "dead";
-			transform.localScale = new Vector3(transform.localScale.x / 2, transform.localScale.y / 2, transform.localScale.z / 2);		 
+            other.name = "p1";
+            transform.localScale = new Vector3(transform.localScale.x / 2, transform.localScale.y / 2, transform.localScale.z / 2);		 
         }
 				
 		if(counter == 3 && other.gameObject.CompareTag ("unlock"))
@@ -73,7 +75,7 @@ public class pickup : MonoBehaviour
             wayPoint.name = "arrived";
 		}
 		
-		if(counter == 3 && other.gameObject.CompareTag ("unlock") && piece4.gameObject.tag == "dead")
+		if(counter == 3 && other.gameObject.CompareTag ("unlock") && piece4.gameObject.tag == "dead" && piece4.name == "p1")
 		{
 
 			unlock.gameObject.SetActive (false);
@@ -81,17 +83,18 @@ public class pickup : MonoBehaviour
             wayPoint.name = "arrived";
 			transform.localScale = new Vector3(x, y, z);
 		}
-		
-		if(other.name == "EnemyOne" && piece5.gameObject.tag == "dead")
-		{
+
+        if (other.name == "EnemyOne" && piece5.gameObject.tag == "dead" && piece5.name == "p1")
+        {
 
 			enemy.gameObject.SetActive (false);
 			enemy.gameObject.tag = "dead";
+            enemy.name = "coward";
             wayPoint.name = "arrived";
 			transform.localScale = new Vector3(x, y, z);
 		}
 		
-		if(other.name == "EnemyOne" && piece6.gameObject.tag == "dead")
+		if(other.name == "EnemyOne" && piece6.gameObject.tag == "dead" && piece6.name == "p1")
 		{
 
 			p1.gameObject.SetActive (false);
@@ -99,6 +102,12 @@ public class pickup : MonoBehaviour
             wayPoint.name = "arrived";
 			transform.localScale = new Vector3(x, y, z);
 		}
-
+        if (other.gameObject.CompareTag("sword"))
+        {
+            other.gameObject.SetActive(false);
+            other.gameObject.tag = "dead";
+            other.name = "deadSword";
+            enemy.name = "coward";
+        }
     }
 }
