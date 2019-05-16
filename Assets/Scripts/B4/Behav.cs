@@ -113,12 +113,13 @@ public class Behav: MonoBehaviour
         {
             if (isChosen == false)
             {
-                Node roaming = new Sequence(
+                Node roaming = new DecoratorLoop(
+                    new Sequence(
                         this.ST_ApproachAndWait(this.wanderOne),
                         (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("POINTING", true)),
 						 (new LeafWait(500)),
 						(participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("POINTING", false)),
-                        (new LeafWait(1000)));
+                        (new LeafWait(1000))));
                 return roaming;
             }
             else
@@ -129,16 +130,18 @@ public class Behav: MonoBehaviour
         }
         else if (finalStage && !deadSword)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                        this.ST_ApproachAndWait(this.wanderThree),
-                       (new LeafWait(1000)));
+                       (new LeafWait(1000))));
             return roaming;
         }
         else if (deadSword)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                        this.ST_ApproachAndWait(this.wanderOne),
-                       (new LeafWait(1000)));
+                       (new LeafWait(1000))));
             return roaming;
         }
         else

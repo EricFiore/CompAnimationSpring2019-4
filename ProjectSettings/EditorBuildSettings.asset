@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Project/Main Menu/Main Menu.unity
     guid: 299e8126d7ff5ac4e96616cb7175b036
   - enabled: 0
@@ -17,10 +17,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Project/B2 Animation/PartTwo/AnimationPartTwo.unity
     guid: cf4d682ba3cde2642bb9b3f27f61c908
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Project/B3 Animation/B3.unity
     guid: 00786aff7f0ff624b94b6c91d0f1d024
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Project/B3 Animation/ExtraCredit.unity
     guid: 2674234c6408d7441a6b182ffdcd0c02
+  - enabled: 1
+    path: Assets/Scenes/Project/B3 Animation/B4.unity
+    guid: f198b879ab1981a4595db437ac8e59cd
   m_configObjects: {}

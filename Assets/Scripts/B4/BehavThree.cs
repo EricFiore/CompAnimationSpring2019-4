@@ -77,46 +77,52 @@ public class BehavThree : MonoBehaviour
     {
         if (gameStage == 3 && num > 4 && !finalAnimOne && !finalAnimTwo)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                     (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("HANDSUP", true)),
-                    (new LeafWait(1000)));
+                    (new LeafWait(1000))));
             participant.name = "coward";
             return roaming;
         }
         else if (gameStage == 3 && num <= 4 && !finalAnimOne && !finalAnimTwo)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                     this.ST_ApproachAndWait(this.wanderOne),
-                    (new LeafWait(1000)));
+                    (new LeafWait(1000))));
             participant.name = "coward";
             return roaming;
         }
         else if (gameStage == 2 && num > 4 && !finalAnimOne && !finalAnimTwo)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                     (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("STAYAWAY", true)),
-                    (new LeafWait(500)));
+                    (new LeafWait(500))));
             return roaming;
         }
         else if (gameStage == 2 && num <= 4 && !finalAnimOne && !finalAnimTwo)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                     (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("SURPRISED", true)),
-                    (new LeafWait(1000)));
+                    (new LeafWait(1000))));
             return roaming;
         }
         else if (finalAnimOne == true && !finalAnimTwo)
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                     (participant.GetComponent<BehaviorMecanim>().Node_BodyAnimation("DUCK", true)),
-                    (new LeafWait(1000)));
+                    (new LeafWait(1000))));
             return roaming;
         }
         else
         {
-            Node roaming = new Sequence(
+            Node roaming = new DecoratorLoop(
+                new Sequence(
                     (participant.GetComponent<BehaviorMecanim>().Node_HandAnimation("BEINGCOCKY", true)),
-                    (new LeafWait(1000)));
+                    (new LeafWait(1000))));
             return roaming;
         }
     }

@@ -8,7 +8,10 @@ public class PlayerTwoController : MonoBehaviour
     private float rotSpeed = 100.0f;
     private Vector3 moveDir = Vector3.zero;
     private float gravity = 8.0f;
+    private int m_SpeedId = 0;
     private CharacterController controller;
+    private LocomotionController locomotionController;
+    public Animator animator;
 	public GameObject participant;
     public MoveObject moveObject;
 
@@ -17,6 +20,7 @@ public class PlayerTwoController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,6 +38,7 @@ public class PlayerTwoController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.W))
             {
                 moveDir = new Vector3(0, 0, 0);
+                animator.SetInteger("walkInt", 0);
             }
             rotSpeed += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
             transform.eulerAngles = new Vector3(0, rotSpeed, 0);
